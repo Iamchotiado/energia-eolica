@@ -1,0 +1,5 @@
+function updateCoeficientes (innerHTML) {
+    const coeficientes = document.getElementById('parametros');
+    coeficientes.innerHTML = innerHTML;
+}
+updateCoeficientes("<%= j render 'coeficiente', coeficientes: @coeficientes %>");

@@ -1,0 +1,30 @@
+default: &default
+  adapter: postgresql
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  encoding: unicode
+  database: energia_dev
+  pool: 5
+  username: cris23
+  password: catita234
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  encoding: unicode
+  database: energia_test
+  pool: 5
+  username: cris23
+  password: catita234
+production:
+  <<: *default
+  encoding: unicode
+  database: energia_prod
+  pool: 5
+  username: cris23
+  password: catita234

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+  <head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+
+    <div id="parametros">
+      <%= render 'coeficiente', coeficientes: @coeficientes %>
+    </div>
+    <p>holaaa</p>
+    <%= form_tag(simulation_path, method: 'GET', remote: true, class: 'form_busqueda') do %>
+      <%= label_tag(:velocidad, "Ingrese velocidad:") %>
+      <%= text_field_tag(:velocidad) %>
+      <%= submit_tag("Calcular") %>
+    <% end %>
+    
+    
+    
+    
+  </body>
+</html>
