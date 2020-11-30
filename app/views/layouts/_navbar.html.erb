@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Energia Eolica</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <% if current_page?(simulation_path) %>
+                <a class="nav-link active" href="#">Simulacion <span class="sr-only">(current)</span></a>
+            <% else %>
+                <a class="nav-link" href="#">Simulacion</a>
+            <% end %>
+            <a class="nav-link" href="#">Partes de la turbina</a>
+            <a class="nav-link" href="#">Energia Renovable</a>
+        </div>
+    </div>
+</nav>

@@ -1,4 +1,5 @@
-<% @coeficientes.each do |coeficiente| %>
 
-    <p><strong>Velocidad:</strong> <%= coeficiente %></p>
-<% end %>
+<p><strong>Velocidad entrada del viento:</strong> <%= @coeficientes[0] %></p>
+<p><strong>Velocidad salida del viento:</strong> <%= @coeficientes[1] %></p>
+<p><strong>Presion del aire al entrar a la turbina:</strong> <%= @coeficientes[2] %></p>
+<p><strong>Presion del aire al salir de la turbina:</strong> <%= @coeficientes[3] %></p>

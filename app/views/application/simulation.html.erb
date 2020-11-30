@@ -6,19 +6,47 @@
   </head>
 
   <body>
+    <div class="container container-simulacion">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-6">
 
-    <div id="parametros">
-      <%= render 'coeficiente', coeficientes: @coeficientes %>
+          <div id="parametros">
+            <%= render 'coeficiente', coeficientes: @coeficientes %>
+          </div>
+    
+          <%= form_tag(simulation_path, method: 'GET', remote: true, class: 'form_busqueda') do %>
+            <%= label_tag(:velocidad_entrada, "Ingrese velocidad de entrada del viento:") %>
+            <input type="range" id="velocidad_entrada" name="velocidad_entrada" min="0" max="10" onchange="updateTextInput(this.value);">
+            <input type="text" id="textInput" value="">
+            <br>
+
+            <%= label_tag(:velocidad_salida, "Ingrese velocidad de salida del viento:") %>
+            <input type="range" id="velocidad_salida" name="velocidad_salida" min="0" max="10" onchange="updateTextInput(this.value);">
+            <input type="text" id="textInput" value="">
+            <br>
+
+            <%= label_tag(:presion_entrada, "Ingrese presion de entrada a la turbina:") %>
+            <input type="range" id="presion_entrada" name="presion_entrada" min="0" max="10" onchange="updateTextInput(this.value);">
+            <input type="text" id="textInput" value="">
+            <br>
+
+            <%= label_tag(:presion_salida, "Ingrese presion de salida de la turbina:") %>
+            <input type="range" id="presion_salida" name="presion_salida" min="0" max="10" onchange="updateTextInput(this.value);">
+            <input type="text" id="textInput" value="">
+            <br>
+            <%= submit_tag("Calcular") %>
+          <% end %>
+        </div>
+        <div class="col"></div>
     </div>
-    <p>holaaa</p>
-    <%= form_tag(simulation_path, method: 'GET', remote: true, class: 'form_busqueda') do %>
-      <%= label_tag(:velocidad, "Ingrese velocidad:") %>
-      <%= text_field_tag(:velocidad) %>
-      <%= submit_tag("Calcular") %>
-    <% end %>
-    
-    
+  </div>
     
     
   </body>
 </html>
+<script>
+  function updateTextInput(val) {
+          document.getElementById('textInput').value=val; 
+        }
+</script>
