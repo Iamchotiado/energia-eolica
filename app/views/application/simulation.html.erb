@@ -20,23 +20,20 @@
           <div class="form-sliders">
           <%= form_tag(simulation_path, method: 'GET', remote: true, class: 'form_busqueda') do %>
             <%= label_tag(:velocidad_entrada, "Ingrese velocidad de entrada del viento:") %>
-            <input type="range" id="velocidad_entrada" name="velocidad_entrada" min="0" max="10" onchange="updateVelocidadInicial(this.value);">
+            <input type="range" id="velocidad_entrada" name="velocidad_entrada" min="3.5" max="11" step="0.5" onchange="updateVelocidadInicial(this.value);">
             <input type="text" id="velocidad_inicial" value="">
             <br>
 
             <%= label_tag(:velocidad_salida, "Ingrese velocidad de salida del viento:") %>
-            <input type="range" id="velocidad_salida" name="velocidad_salida" min="0" max="10" onchange="updateVelocidadFinal(this.value);">
+            <input type="range" id="velocidad_salida" name="velocidad_salida" min="3.5" max="11" step="0.5" onchange="updateVelocidadFinal(this.value);">
             <input type="text" id="velocidad_final" value="">
             <br>
 
-            <%= label_tag(:presion_entrada, "Ingrese presion de entrada a la turbina:") %>
-            <input type="range" id="presion_entrada" name="presion_entrada" min="0" max="10" onchange="updatePresionInicial(this.value);">
-            <input type="text" id="presion_inicial" value="">
+            <%= label_tag(:largo_aspa, "Ingrese el largo de las aspas:") %>
+            <input type="range" id="largo_aspa" name="largo_aspa" min="15" max="25" onchange="updateLargoAspa(this.value);">
+            <input type="text" id="largo_inicial" value="">
             <br>
 
-            <%= label_tag(:presion_salida, "Ingrese presion de salida de la turbina:") %>
-            <input type="range" id="presion_salida" name="presion_salida" min="0" max="10" onchange="updatePresionFinal(this.value);">
-            <input type="text" id="presion_final" value="">
             <br>
             <%= submit_tag("Calcular", class: 'btn btn-success') %>
           <% end %>
@@ -51,18 +48,20 @@
 </html>
 <script>
   function updateVelocidadInicial(val) {
-          document.getElementById('velocidad_inicial').value=val; 
+          document.getElementById('velocidad_inicial').value=val + ' m/s';
+          
         }
 
   function updateVelocidadFinal(val) {
-          document.getElementById('velocidad_final').value=val; 
+          document.getElementById('velocidad_final').value=val + ' m/s'; 
+
         }
 
-  function updatePresionInicial(val) {
-          document.getElementById('presion_inicial').value=val; 
+  function updateLargoAspa(val) {
+          document.getElementById('largo_inicial').value=val + ' m'; 
         }
 
-  function updatePresionFinal(val) {
-          document.getElementById('presion_final').value=val; 
-        }
+  // function updatePresionFinal(val) {
+  //         document.getElementById('presion_final').value=val; 
+  //       }
 </script>
