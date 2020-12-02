@@ -8,10 +8,18 @@
             <% if current_page?(simulation_path) %>
                 <a class="nav-link active" href="#">Simulacion <span class="sr-only">(current)</span></a>
             <% else %>
-                <a class="nav-link" href="#">Simulacion</a>
+                <%= link_to 'Simulacion', simulation_path, class: 'nav-link' %>
             <% end %>
-            <a class="nav-link" href="#">Partes de la turbina</a>
-            <a class="nav-link" href="#">Energia Renovable</a>
+            <% if current_page?(componentes_path) %>
+                <a class="nav-link active" href="#">Partes de la turbina <span class="sr-only">(current)</span></a>
+            <% else %>
+                <%= link_to 'Partes de la turbina', componentes_path, class: 'nav-link' %>
+            <% end %>
+            <% if current_page?(info_energia_path) %>
+                <a class="nav-link active" href="#">Energia Renovable <span class="sr-only">(current)</span></a>
+            <% else %>
+                <%= link_to 'Energia Renovable', info_energia_path, class: 'nav-link' %>
+            <% end %>
         </div>
     </div>
 </nav>

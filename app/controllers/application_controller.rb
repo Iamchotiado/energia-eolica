@@ -28,4 +28,12 @@ class ApplicationController < ActionController::Base
             format.js
         end
     end
+
+    def componentes
+        
+    end
+
+    def energia_renovable
+        
+    end
 end

@@ -17,9 +17,26 @@
 
 
 .container-simulacion {
-    margin-top: 6%;
+    margin-top: 0%;
 }
 
 input[type=text] {
     border: none;
   }
+
+.carta-resultados {
+    margin-bottom: 2%;
+}
+
+.form-sliders {
+    margin-top: 16%;
+}
+
+.carta-componentes {
+    margin: 2% 18% 18% 18%;
+}
+
+.img-energia {
+    width: 100%;
+    padding: 2% 20% 6% 20%;
+}
