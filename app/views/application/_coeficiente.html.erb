@@ -3,8 +3,30 @@
         Simulacion
     </div>
     <div class="card-body">
-        <div style="width:100%;height:0;padding-bottom:67%;position:relative;"><iframe src="https://giphy.com/embed/qBbrMkyGKNJQs" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/wind-qBbrMkyGKNJQs">via GIPHY</a></p>
+        <%if (@coeficientes[0] == 0)%>
+                    <div style="width:100%;height:0;padding-bottom:67%;position:relative;"><img src="https://energia-eolica.s3-sa-east-1.amazonaws.com/inicial1.png" width="90%" height="100%" style="position:absolute" frameBorder="0"  allowFullScreen></img></div>
+        <%else%>
+            <%if (@velocidad_entrada <=4 )%>
+                <div style="width:100%;height:100%;padding-bottom:67%;position:relative;"><iframe src="https://energia-eolica.s3-sa-east-1.amazonaws.com/gif1.gif" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+            <%end%>        
 
+            <%if ((@velocidad_entrada > 4) and (@velocidad_entrada <= 6))%>
+                <div style="width:100%;height:0;padding-bottom:67%;position:relative;"><iframe src="https://energia-eolica.s3-sa-east-1.amazonaws.com/gif2.gif" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+            <%end%>
+
+            <%if ((@velocidad_entrada > 6) and (@velocidad_entrada <= 8))%>
+                <div style="width:100%;height:0;padding-bottom:67%;position:relative;"><iframe src="https://energia-eolica.s3-sa-east-1.amazonaws.com/gif3.gif" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+            <%end%>
+
+            <%if ((@velocidad_entrada > 8) and (@velocidad_entrada <= 10))%>
+                <div style="width:100%;height:0;padding-bottom:67%;position:relative;"><iframe src="https://energia-eolica.s3-sa-east-1.amazonaws.com/gif4.gif" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+            <%end%>
+
+            <%if (@velocidad_entrada > 10 )%>
+                <div style="width:100%;height:0;padding-bottom:67%;position:relative;"><iframe src="https://energia-eolica.s3-sa-east-1.amazonaws.com/gif5.gif" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+            <%end%>
+
+        <%end%>
     </div>
 </div>
 
@@ -14,9 +36,9 @@
         Resultados
     </div>
     <div class="card-body">
-        <p class="card-text"><strong>Factor de induccion:</strong> <%= @coeficientes[0] %></p>
-        <p class="card-text"><strong>Potencia:</strong> <%= @coeficientes[1] %></p>
-        <p class="card-text"><strong>Coeficiente de potencia:</strong> <%= @coeficientes[2] %></p>
+        <p class="card-text"><strong>Factor de induccion:</strong> <%= @coeficientes[0].round(5) %></p>
+        <p class="card-text"><strong>Potencia:</strong> <%= @coeficientes[1].round(2) %></p>
+        <p class="card-text"><strong>Coeficiente de potencia:</strong> <%= @coeficientes[2].round(5) %></p>
         
 
     </div>
