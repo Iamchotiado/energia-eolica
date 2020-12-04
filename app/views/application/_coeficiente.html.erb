@@ -40,7 +40,7 @@
             <p class="card-text"><strong>Error. La velocidad de entrada del viento a la turbina debe ser mayor a la velocidad de salida del viento.</strong></p>
         <%else%>
             <p class="card-text"><strong>Factor de induccion:</strong> <%= @coeficientes[0].round(5) %></p>
-            <p class="card-text"><strong>Potencia:</strong> <%= @coeficientes[1].round(2) %></p>
+            <p class="card-text"><strong>Potencia:</strong> <%= @coeficientes[1].round(2) %> W</p>
             <p class="card-text"><strong>Coeficiente de potencia:</strong> <%= @coeficientes[2].round(5) %></p>
         <%end%>
 
