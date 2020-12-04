@@ -66,3 +66,14 @@
   //         document.getElementById('presion_final').value=val; 
   //       }
 </script>
+
+<script type="text/javascript">
+  var sliders = document.querySelectorAll("input");
+  var form = document.querySelector('form');
+
+  for (const slider of sliders) {
+  slider.addEventListener( 'change', function() {
+    Rails.fire(form, 'submit');
+  });
+  }
+</script>

@@ -8,8 +8,8 @@ development:
   encoding: unicode
   database: energia_dev
   pool: 5
-  username: postgres
-  password: Roberto90
+  username: cris23
+  password: catita234
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -19,12 +19,12 @@ test:
   encoding: unicode
   database: energia_test
   pool: 5
-  username: postgres
-  password: Roberto90
+  username: cris23
+  password: catita234
 production:
   <<: *default
   encoding: unicode
   database: energia_prod
   pool: 5
-  username: postgres
-  password: Roberto90
+  username: cris23
+  password: catita234
