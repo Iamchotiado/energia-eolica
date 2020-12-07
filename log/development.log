@@ -4094,3 +4094,185 @@ Processing by ApplicationController#simulation as HTML
 Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-12-07 18:03:19 -0300
+Processing by ApplicationController#simulation as HTML
+  Rendering application/simulation.html.erb within layouts/application
+  Rendered application/_coeficiente.html.erb (0.8ms)
+  Rendered application/simulation.html.erb within layouts/application (44.6ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 943ms (Views: 897.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/marco_teorico" for 127.0.0.1 at 2020-12-07 18:03:25 -0300
+Processing by ApplicationController#marco_teorico as HTML
+  Rendering application/marco_teorico.erb within layouts/application
+  Rendered application/marco_teorico.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 39ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energia_renovable" for ::1 at 2020-12-07 18:03:55 -0300
+Processing by ApplicationController#energia_renovable as HTML
+  Rendering application/energia_renovable.html.erb within layouts/application
+  Rendered application/energia_renovable.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 45ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/componentes" for ::1 at 2020-12-07 18:03:57 -0300
+Processing by ApplicationController#componentes as HTML
+  Rendering application/componentes.html.erb within layouts/application
+  Rendered application/componentes.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 43ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/energia_renovable" for ::1 at 2020-12-07 18:03:58 -0300
+Processing by ApplicationController#energia_renovable as HTML
+  Rendering application/energia_renovable.html.erb within layouts/application
+  Rendered application/energia_renovable.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 72ms (Views: 68.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/componentes" for ::1 at 2020-12-07 18:04:00 -0300
+Processing by ApplicationController#componentes as HTML
+  Rendering application/componentes.html.erb within layouts/application
+  Rendered application/componentes.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (2.1ms)
+Completed 200 OK in 55ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-07 18:04:02 -0300
+Processing by ApplicationController#simulation as HTML
+  Rendering application/simulation.html.erb within layouts/application
+  Rendered application/_coeficiente.html.erb (0.7ms)
+  Rendered application/simulation.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 44ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&velocidad_entrada=7.5&velocidad_salida=11&largo_aspa=20" for ::1 at 2020-12-07 18:04:05 -0300
+Processing by ApplicationController#simulation as JS
+  Parameters: {"utf8"=>"✓", "velocidad_entrada"=>"7.5", "velocidad_salida"=>"11", "largo_aspa"=>"20"}
+  Rendering application/simulation.js.erb
+  Rendered application/_coeficiente.html.erb (0.8ms)
+  Rendered application/simulation.js.erb (8.6ms)
+Completed 200 OK in 35ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&velocidad_entrada=11&velocidad_salida=11&largo_aspa=20" for ::1 at 2020-12-07 18:04:08 -0300
+Processing by ApplicationController#simulation as JS
+  Parameters: {"utf8"=>"✓", "velocidad_entrada"=>"11", "velocidad_salida"=>"11", "largo_aspa"=>"20"}
+  Rendering application/simulation.js.erb
+  Rendered application/_coeficiente.html.erb (0.9ms)
+  Rendered application/simulation.js.erb (5.0ms)
+Completed 200 OK in 18ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&velocidad_entrada=11&velocidad_salida=9&largo_aspa=20" for ::1 at 2020-12-07 18:04:09 -0300
+Processing by ApplicationController#simulation as JS
+  Parameters: {"utf8"=>"✓", "velocidad_entrada"=>"11", "velocidad_salida"=>"9", "largo_aspa"=>"20"}
+  Rendering application/simulation.js.erb
+  Rendered application/_coeficiente.html.erb (1.0ms)
+  Rendered application/simulation.js.erb (4.8ms)
+Completed 200 OK in 17ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&velocidad_entrada=11&velocidad_salida=3.5&largo_aspa=20" for ::1 at 2020-12-07 18:04:15 -0300
+Processing by ApplicationController#simulation as JS
+  Parameters: {"utf8"=>"✓", "velocidad_entrada"=>"11", "velocidad_salida"=>"3.5", "largo_aspa"=>"20"}
+  Rendering application/simulation.js.erb
+  Rendered application/_coeficiente.html.erb (0.9ms)
+  Rendered application/simulation.js.erb (4.7ms)
+Completed 200 OK in 16ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&velocidad_entrada=7.5&velocidad_salida=3.5&largo_aspa=20" for ::1 at 2020-12-07 18:04:18 -0300
+Processing by ApplicationController#simulation as JS
+  Parameters: {"utf8"=>"✓", "velocidad_entrada"=>"7.5", "velocidad_salida"=>"3.5", "largo_aspa"=>"20"}
+  Rendering application/simulation.js.erb
+  Rendered application/_coeficiente.html.erb (0.9ms)
+  Rendered application/simulation.js.erb (4.6ms)
+Completed 200 OK in 17ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&velocidad_entrada=5&velocidad_salida=3.5&largo_aspa=20" for ::1 at 2020-12-07 18:04:20 -0300
+Processing by ApplicationController#simulation as JS
+  Parameters: {"utf8"=>"✓", "velocidad_entrada"=>"5", "velocidad_salida"=>"3.5", "largo_aspa"=>"20"}
+  Rendering application/simulation.js.erb
+  Rendered application/_coeficiente.html.erb (0.8ms)
+  Rendered application/simulation.js.erb (4.3ms)
+Completed 200 OK in 17ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&velocidad_entrada=3.5&velocidad_salida=3.5&largo_aspa=20" for ::1 at 2020-12-07 18:04:22 -0300
+Processing by ApplicationController#simulation as JS
+  Parameters: {"utf8"=>"✓", "velocidad_entrada"=>"3.5", "velocidad_salida"=>"3.5", "largo_aspa"=>"20"}
+  Rendering application/simulation.js.erb
+  Rendered application/_coeficiente.html.erb (0.9ms)
+  Rendered application/simulation.js.erb (5.3ms)
+Completed 200 OK in 16ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&velocidad_entrada=6&velocidad_salida=3.5&largo_aspa=20" for ::1 at 2020-12-07 18:04:25 -0300
+Processing by ApplicationController#simulation as JS
+  Parameters: {"utf8"=>"✓", "velocidad_entrada"=>"6", "velocidad_salida"=>"3.5", "largo_aspa"=>"20"}
+  Rendering application/simulation.js.erb
+  Rendered application/_coeficiente.html.erb (0.8ms)
+  Rendered application/simulation.js.erb (4.9ms)
+Completed 200 OK in 16ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&velocidad_entrada=6&velocidad_salida=10&largo_aspa=20" for ::1 at 2020-12-07 18:04:27 -0300
+Processing by ApplicationController#simulation as JS
+  Parameters: {"utf8"=>"✓", "velocidad_entrada"=>"6", "velocidad_salida"=>"10", "largo_aspa"=>"20"}
+  Rendering application/simulation.js.erb
+  Rendered application/_coeficiente.html.erb (0.7ms)
+  Rendered application/simulation.js.erb (4.8ms)
+Completed 200 OK in 16ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&velocidad_entrada=6&velocidad_salida=3.5&largo_aspa=20" for ::1 at 2020-12-07 18:04:29 -0300
+Processing by ApplicationController#simulation as JS
+  Parameters: {"utf8"=>"✓", "velocidad_entrada"=>"6", "velocidad_salida"=>"3.5", "largo_aspa"=>"20"}
+  Rendering application/simulation.js.erb
+  Rendered application/_coeficiente.html.erb (0.7ms)
+  Rendered application/simulation.js.erb (4.0ms)
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&velocidad_entrada=6&velocidad_salida=3.5&largo_aspa=22" for ::1 at 2020-12-07 18:04:34 -0300
+Processing by ApplicationController#simulation as JS
+  Parameters: {"utf8"=>"✓", "velocidad_entrada"=>"6", "velocidad_salida"=>"3.5", "largo_aspa"=>"22"}
+  Rendering application/simulation.js.erb
+  Rendered application/_coeficiente.html.erb (0.5ms)
+  Rendered application/simulation.js.erb (2.8ms)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-12-07 18:04:37 -0300
+Processing by ApplicationController#simulation as HTML
+  Rendering application/simulation.html.erb within layouts/application
+  Rendered application/_coeficiente.html.erb (1.1ms)
+  Rendered application/simulation.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 69ms (Views: 64.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/componentes" for ::1 at 2020-12-07 18:04:38 -0300
+Processing by ApplicationController#componentes as HTML
+  Rendering application/componentes.html.erb within layouts/application
+  Rendered application/componentes.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 118ms (Views: 108.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/marco_teorico" for ::1 at 2020-12-07 18:04:54 -0300
+Processing by ApplicationController#marco_teorico as HTML
+  Rendering application/marco_teorico.erb within layouts/application
+  Rendered application/marco_teorico.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+

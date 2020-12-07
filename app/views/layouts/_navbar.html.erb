@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Energia Eolica</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -6,17 +6,17 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <% if current_page?(simulation_path) %>
-                <a class="nav-link active" href="#">Simulacion <span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="#">Simulación  <span class="sr-only">(current)</span></a>
             <% else %>
                 <%= link_to 'Simulacion', simulation_path, class: 'nav-link' %>
             <% end %>
             <% if current_page?(componentes_path) %>
-                <a class="nav-link active" href="#">Partes de la turbina <span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="#">Partes de la turbina   <span class="sr-only">(current)</span></a>
             <% else %>
                 <%= link_to 'Partes de la turbina', componentes_path, class: 'nav-link' %>
             <% end %>
             <% if current_page?(info_energia_path) %>
-                <a class="nav-link active" href="#">Energia Renovable <span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="#">Energia Renovable   <span class="sr-only">(current)</span></a>
             <% else %>
                 <%= link_to 'Energia Renovable', info_energia_path, class: 'nav-link' %>
             <% end %>
@@ -28,3 +28,5 @@
         </div>
     </div>
 </nav>
+
+
