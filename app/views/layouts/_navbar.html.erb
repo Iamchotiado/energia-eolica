@@ -20,6 +20,11 @@
             <% else %>
                 <%= link_to 'Energia Renovable', info_energia_path, class: 'nav-link' %>
             <% end %>
+            <% if current_page?(marco_teorico_path) %>
+            <a class="nav-link active" href="#">Como funciona? <span class="sr-only">(current)</span></a>
+        <% else %>
+            <%= link_to 'Como funciona?', marco_teorico_path, class: 'nav-link' %>
+        <% end %>
         </div>
     </div>
 </nav>
