@@ -17,7 +17,7 @@
 
 
           
-          <div class="form-sliders">
+        <div class="form-sliders">
           <%= form_tag(simulation_path, method: 'GET', remote: true, class: 'form_busqueda') do %>
             <%= label_tag(:velocidad_entrada, "Ingrese velocidad de entrada del viento:") %>
             <input type="range" id="velocidad_entrada" name="velocidad_entrada" min="3.5" max="11" step="0.5" onchange="updateVelocidadInicial(this.value);">
@@ -39,10 +39,35 @@
             <%= link_to 'Reiniciar', simulation_path, class: 'btn btn-dark' %>
 
           <% end %>
+          </div>
         </div>
+      </div>
+        <div class="row">
+          <div class="col">
+            <div class="card carta-componentes">
+                <div class="card-header">
+                     Formulas utilizadas:
+                </div>
+                <div class="card-body">
+                    <figure>
+                        <p>Factor induccion<br><img class="img-energia" src="https://energia-eolica.s3-sa-east-1.amazonaws.com/factor_induccion.jpeg" alt="ilustracion energia renovable"></p>
+                        <p>Coeficiente de Potencia<br><img class="img-energia" src="https://energia-eolica.s3-sa-east-1.amazonaws.com/coeficiente_potencia.jpeg" alt="ilustracion energia renovable"></p>
+                        <p>Potencia<br><img class="img-energia" src="https://energia-eolica.s3-sa-east-1.amazonaws.com/potencia.jpeg" alt="ilustracion energia renovable"></p>
+                        <br><br>
+                        <p>Donde:<br>
+                        V1 -> velocidad de entrada<br>
+                        V2 -> velocidad de salida<br>
+                        A2 -> Area que recorren las aspas<br>
+                        p -> Densidad del aire <br>
+                        </p>
+                    </figure>
+            
+                </div>
+            </div>
+          </div>
         </div>
        
-    </div>
+
   </div>
     
     
